@@ -1,0 +1,89 @@
+@use "../general/mixin";
+
+.header {
+    height: 44px;
+    border-top: solid 1px #E1FD2C;
+    border-bottom: solid 1px #E1FD2C;
+    @include mixin.flex(row, space-between, center);
+    position: relative;
+    padding: 0 32px;
+    box-sizing: border-box;
+    width: 1440px;
+    &__logo {
+        width: 234px;
+        height: 44px;
+    }
+    &__button {
+        position: relative;
+        z-index: 100;
+        width: 320px;
+        height: 40px;
+
+    }
+}
+
+.cover {
+    @include mixin.flex(column, center, center);
+    padding-top: 30px;
+    background-color: #16774A;
+    width: 1440px;
+    &__content {
+        height: 725.41px;
+    }
+    &__text {
+        @include mixin.flex(column, space-between, center);
+        position: relative;
+        top: 177.41px;
+        height: 473px;
+        z-index: 100;
+    }
+    &__heading {
+        @include mixin.font('Roboto', 400, 105px, 109px);
+        width: 875px;
+        height: 218px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #E1FD2C;
+    }
+    &__span {
+        @include mixin.font('Roboto', 400, 24px, 30px);
+        width: 358px;
+        height: 60px;
+        text-align: center;
+        color: #E1FD2C;
+    }
+    &__illustration {
+        @include mixin.flex(column, center, none);
+        position: absolute;
+        height: 623.78px;
+        width: 1440px;
+        z-index: 70;
+    }
+    &__tablet-1, &__tablet-2, &__tablet-3{
+        position: absolute;
+    }
+    &__tablet-1 {
+        left: 931px;
+        top: 0;
+    }
+    &__tablet-2 {
+        left: 182px;
+        top: 276.41px;
+    }
+    &__tablet-3 {
+        left: 1072px;
+        top: 412.41px;
+    }
+    &__ellipse {
+        position: absolute;
+        align-self: center;
+
+    }
+    &__man {
+        position: absolute;
+        left: 903px;
+        top: 500px;
+        z-index: 50;
+    }
+}
+

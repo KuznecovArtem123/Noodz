@@ -1,0 +1,74 @@
+@use "../general/mixin";
+
+.faq {
+    height: 1936px;
+    width: 1440px;
+    background-color: #E1FD2C;
+    @include mixin.flex(column, none, center);
+    padding-top: 86px;
+    box-sizing: border-box;
+    position: relative;
+    &__heading {
+        height: 194px;
+        border-top: solid 1px #4F2479;
+        border-bottom: solid 1px #4F2479;
+        @include mixin.font('Roboto', 300, 159px, 156px);
+        @include mixin.flex(column, center, center);
+        width: 1440px;
+        color: #4F2479;
+        &__span {
+            height: 156px;
+            width: 288px;
+        }
+    }
+    &__accordion {
+        width: 1440px;
+        &_element {
+            box-sizing: border-box;
+            padding: 0 115.2px;
+            @include mixin.flex(column, space-between, center);
+            height: 185px;
+            width: 1440px;
+            border-bottom: solid 1px #4F2479;
+            transition: height 1s ease-in-out;
+            // &:hover {
+            //     height: 280px;
+            // }
+            &-btn {
+                box-sizing: border-box;
+                padding: 0 115.2px;
+                @include mixin.flex(row, center, center);
+                height: 165px;
+                width: 1440px;
+                flex: none;
+            }
+        }
+        &_content {
+            @include mixin.font('Roboto', 400, 24px, 32px);
+            color: #4F2479;
+            width: 700px;
+        }
+        &_heading {
+            width: 1011px;
+            color: #4F2479;
+            @include mixin.font('Roboto', 700, 48px, 48px);
+        }
+        &_icon {
+            font-size: 56px;
+
+        }
+    }
+    &__lines {
+        width: 1440px;
+        height: 258px;
+
+    }
+    &__line-1, &__line-2 {
+        border-bottom: 1px solid #E1FD2C;
+        position: absolute;
+        bottom: -75px;
+        z-index: 100;
+    }
+
+}
+

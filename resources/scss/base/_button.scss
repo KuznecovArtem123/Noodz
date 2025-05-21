@@ -1,0 +1,28 @@
+@use "../general/mixin";
+
+.button {
+    background-color: #E1FD2C;
+    transition: 0.2s;
+    &:hover {
+        background-color: #b8d306;
+    }
+    &:active {
+        background-color: #dcf346;
+    }
+    &__text {
+        @include mixin.font('Roboto', 400, 18px, 18px);
+        align-self: stretch;
+    }
+    &-green {
+        &__text {
+            color: #16774A;
+        }
+    }
+    &-purple {
+        border: solid 2px #4F2479;
+        &__text {
+            color: #4F2479;
+        }
+    }
+
+}

@@ -1,0 +1,77 @@
+@use "../general/mixin";
+
+.info {
+    width: 1440px;
+    height: 2259px;
+    background-color: #F6A0A9;
+    padding-top: 418.69px;
+    box-sizing: border-box;
+    &__content {
+        gap: 95px;
+        @include mixin.flex(column, space-between, space-between);
+    }
+    &__illustration {
+        width: 893px;
+        height: 594.98px;
+        position: relative;
+    }
+    &__people {
+        position: absolute;
+    }
+    &__stars {
+        @include mixin.flex(row, space-between, space-between);
+        position: absolute;
+        height: 168px;
+        width: 96px;
+        flex-wrap: wrap;
+        bottom: 0;
+        left: 72.2px;
+    }
+    &__star {
+        width: 40px;
+        height: 40px;
+    }
+    &__tablet-1, &__tablet-2, &__tablet-3{
+        position: absolute;
+    }
+    &__tablet-1 {
+        left: 720px;
+        top: 0px;
+    }
+    &__tablet-2 {
+        left: 115px;
+        top: 65px;
+    }
+    &__tablet-3 {
+        left: 576px;
+        top: 395px;
+    }
+    &__text {
+        height: 1021.53px;
+    }
+    &__span {
+        @include mixin.font('Roboto', 700, 40px, 70px);
+        height: 350px;
+        width: 833px;
+        color: #4F2479;
+        display: flex;
+        left: 115px;
+        position: relative;
+    }
+    &__form {
+        @include mixin.flex(column, space-between, flex-start);
+        height: 556.55px;
+        width: 604.796875px;
+        position: relative;
+        left: 720px;
+        &_span-1, &_span-2 {
+            @include mixin.font('Roboto', 700, 20px, 45px);
+            width: 498px;
+            color: #4F2479;
+        }
+        &_button {
+            width: 240px;
+            height: 64px;
+        }
+    }
+}

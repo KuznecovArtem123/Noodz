@@ -1,0 +1,24 @@
+@use "../general/mixin";
+
+.video {
+    background-color: #F6A0A9;
+    width: 1440px;
+    height: 800px;
+    @include mixin.flex(row, center, none);
+    &__player {
+        @include mixin.flex(row, center, center);
+        height: 685px;
+        width: 1210px;
+        position: relative;
+        border: solid 2px #4F2479;
+    }
+    &__img {
+        height: 681px;
+        width: 1206px;
+    }
+    &__play-button {
+        width: 480px;
+        height: 480px;
+        position: absolute;
+    }
+}

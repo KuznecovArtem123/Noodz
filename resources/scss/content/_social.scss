@@ -1,0 +1,90 @@
+@use "../general/mixin";
+
+.social {
+    position: relative;
+    height: 1909px;
+    width: 1440px;
+    background-color: #BBD4D0;
+    padding-top: 190.79px;
+    box-sizing: border-box;
+    position: relative;
+    @include mixin.flex(column, none, center);
+    &__cards {
+        width: 1425.6px;
+        height: 643.42px;
+        position: relative;
+        z-index: 100;
+    }
+    &__card-1, &__card-2, &__card-3 {
+        position: absolute;
+        height: 264.42;
+    }
+    &__card-1 {
+        left: 14.4px;
+    }
+    &__card-2 {
+        left: 442.95px;
+    }
+    &__card-3 {
+        left: 818.11px;
+    }
+    &__instagram {
+        width: 214px;
+        height: 63px;
+        border: solid 1px #4F2479;
+        background-color: #E1FD2C;
+        @include mixin.flex(row, center, center);
+        position: absolute;
+        z-index: 200;
+        top: 250px;
+        &_span {
+            position: absolute;
+            height: 24px;
+            text-transform: uppercase;
+            color: #4F2479;
+            @include mixin.font('Roboto', 400, 19px, 24px);
+        }
+    }
+    &__back {
+        position: absolute;
+        z-index: 50;
+        width: 1440px;
+        top: 0;
+    }
+    &__notice {
+        @include mixin.flex(column, center, center);
+        width: 560px;
+        height: 293.19px;
+        position: relative;
+        top: 653.92px;
+        &_span {
+            width: 526px;
+            height: 224px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #16774A;
+            @include mixin.font('Roboto', 400, 97px, 112px);
+        }
+        &_btn {
+            background-color: transparent;
+            height: 36px;
+            width: 560px;
+            border-bottom: solid 2px #16774A;
+            @include mixin.flex(row, space-between, flex-start);
+            transition: 0.2s;
+            &:hover {
+                width: 500px;
+            }
+            &-span {
+                height: 24px;
+                text-transform: uppercase;
+                @include mixin.font('Roboto', 400, 16px, 24px);
+                color: #16774A;
+            }
+            &-icon {
+                color: #16774A;
+                font-size: 24px;
+            }
+        }
+    }
+}

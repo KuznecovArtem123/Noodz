@@ -1,0 +1,13 @@
+@mixin flex($flex_dir,$flex_justify,$align_items){
+    display: flex;
+    flex-direction: $flex_dir;
+    justify-content: $flex_justify;
+    align-items: $align_items;
+}
+@mixin font($family, $weight,$font-size, $line-height){
+    font-family: $family;
+    font-style: normal;
+    font-weight: $weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}

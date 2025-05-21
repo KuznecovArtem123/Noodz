@@ -1,0 +1,96 @@
+@use "../general/mixin";
+
+.footer {
+    height: 920px;
+    width: 1440px;
+    background-color: #4F2479;
+    @include mixin.flex(row, center, center);
+    &__content {
+        @include mixin.flex(row, space-between, space-between);
+        height: 663.7px;
+        width: 1209px;
+        column-gap: 324.53px;
+        flex-wrap: wrap
+    }
+    &__offer {
+        @include mixin.flex(column, flex-start, flex-start);
+        height: 212px;
+        width: 392.53125px;
+        gap: 24px;
+        &-heading {
+            width: 302px;
+            @include mixin.font('Roboto', 400, 42px, 46px);
+            text-transform: uppercase;
+            color: #E1FD2C;
+        }
+        &-span {
+            width: 240px;
+            @include mixin.font('Roboto', 400, 16px, 36px);
+            color: #E1FD2C;
+        }
+    }
+    &__interview {
+        @include mixin.flex(column, flex-start, flex-start);
+        height: 212px;
+        width: 392.53125px;
+        gap: 24px;
+        &-heading {
+            width: 302px;
+            @include mixin.font('Roboto', 400, 42px, 46px);
+            text-transform: uppercase;
+            color: #E1FD2C;
+        }
+        &-span {
+            width: 240px;
+            @include mixin.font('Roboto', 400, 16px, 36px);
+            color: #E1FD2C;
+        }
+    }
+    &__copyrights {
+        width: 983px;
+        @include mixin.flex(row, space-between, center);
+    }
+    &__element {
+        @include mixin.font('Roboto', 400, 16px, 24px);
+        color: #E1FD2C;
+        width: 166px;
+    }
+    &__illustration {
+        @include mixin.flex(column, flex-end, flex-end);
+        height: 315.7px;
+        width: 1209.59375px;
+    }
+    &__logo {
+        width: 1210px;
+        height: 240px;
+    }
+    &__carousel {
+        @include mixin.flex(row, flex-start, center);
+        width: 320px;
+        height: 44px;
+        background-color: #E1FD2C;
+        gap: 24px;
+        overflow: hidden;
+        &_content {
+            @include mixin.flex(row, center, center);
+            gap: 24px;
+            flex: none;
+        }
+        &__text {
+            @include mixin.flex(row, center, center);
+            gap: 11px;
+            width: 172px;
+            flex-wrap: nowrap
+        }
+        &_span {
+            @include mixin.font('Roboto', 400, 18px, 18px);
+            height: 18px;
+            color: #4F2479;
+        }
+        &_icon {
+            color: #4F2479;
+            font-size: 18px;
+        }
+
+    }
+}
